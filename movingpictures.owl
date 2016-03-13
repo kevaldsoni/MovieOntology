@@ -1,0 +1,841 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.movingpictures.org/movies/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.movingpictures.org/movies/">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">&quot;Ontology that descibes categories of movies based on their genre.&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="Creator"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Keval Soni</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&xsd;decimal">1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Action_Movies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Action_Thriller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Awards"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Crime_Drama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Drama_Movies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Excellent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Historical_Drama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Horror_Movies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Movie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Musical_Artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Paranormal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PerformanceReview"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Possesion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Producer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Production_Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Romance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Romantic_Comedy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Romantic_Drama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sci_Fi_Movie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Super_Hero_Movie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Suspense_Thriller_Movie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Writer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Zombies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="belongsToGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasActor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDirector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFemaleActor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMaleActor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMusicalArtist"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPerformanceReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasProducer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasWonAward"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasWriter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isActorIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isAwardOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDirectorIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isFemaleActorIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isMaleActorIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isMusicalArtistIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isProducedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isProducerBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRecordedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isWriterIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="produces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="releasedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="First_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Last_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="MovieTitle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="Rating"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Batman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Conjurin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="English"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Fantastic_Four"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Golden_Globe_Award"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="IIFA_Award"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="India"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Oscar_Award"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="South_Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Spanish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Transformers"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="United_Kingdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="United_States"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="Creator"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="Awards"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="Oscar_Award"/>
+            <NamedIndividual IRI="Golden_Globe_Award"/>
+            <NamedIndividual IRI="IIFA_Award"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="PerformanceReview"/>
+        <ObjectUnionOf>
+            <Class IRI="Bad"/>
+            <Class IRI="Excellent"/>
+            <Class IRI="Good"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="Action_Movies"/>
+        <Class IRI="Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Action_Thriller"/>
+        <Class IRI="Action_Movies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Actor"/>
+        <Class IRI="Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Bad"/>
+        <Class IRI="PerformanceReview"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Crime_Drama"/>
+        <Class IRI="Drama_Movies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Director"/>
+        <Class IRI="Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Drama_Movies"/>
+        <Class IRI="Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Excellent"/>
+        <Class IRI="PerformanceReview"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Good"/>
+        <Class IRI="PerformanceReview"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Historical_Drama"/>
+        <Class IRI="Drama_Movies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Horror_Movies"/>
+        <Class IRI="Genre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Movie"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasActor"/>
+            <Class IRI="Actor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Movie"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="belongsToGenre"/>
+            <ObjectUnionOf>
+                <Class IRI="Action_Movies"/>
+                <Class IRI="Drama_Movies"/>
+                <Class IRI="Horror_Movies"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Movie"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="releasedIn"/>
+            <Class IRI="Country"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Movie"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="Rating"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="&xsd;minInclusive">
+                    <Literal datatypeIRI="&xsd;integer">1</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Musical_Artist"/>
+        <Class IRI="Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Paranormal"/>
+        <Class IRI="Horror_Movies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasPerformanceReview"/>
+            <ObjectUnionOf>
+                <Class IRI="Bad"/>
+                <Class IRI="Excellent"/>
+                <Class IRI="Good"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="First_Name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="Last_Name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Possesion"/>
+        <Class IRI="Horror_Movies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Producer"/>
+        <Class IRI="Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Romance"/>
+        <Class IRI="Drama_Movies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Romantic_Comedy"/>
+        <Class IRI="Romance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Romantic_Drama"/>
+        <Class IRI="Romance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sci_Fi_Movie"/>
+        <Class IRI="Action_Thriller"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sci_Fi_Movie"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="releasedIn"/>
+            <NamedIndividual IRI="United_States"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Super_Hero_Movie"/>
+        <Class IRI="Action_Movies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Suspense_Thriller_Movie"/>
+        <Class IRI="Action_Thriller"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Writer"/>
+        <Class IRI="Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Zombies"/>
+        <Class IRI="Horror_Movies"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Action_Movies"/>
+        <Class IRI="Drama_Movies"/>
+        <Class IRI="Horror_Movies"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Action_Thriller"/>
+        <Class IRI="Super_Hero_Movie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Bad"/>
+        <Class IRI="Excellent"/>
+        <Class IRI="Good"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Crime_Drama"/>
+        <Class IRI="Historical_Drama"/>
+        <Class IRI="Romance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Paranormal"/>
+        <Class IRI="Possesion"/>
+        <Class IRI="Zombies"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Romantic_Comedy"/>
+        <Class IRI="Romantic_Drama"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Sci_Fi_Movie"/>
+        <Class IRI="Suspense_Thriller_Movie"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="Country"/>
+        <NamedIndividual IRI="Australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Super_Hero_Movie"/>
+        <NamedIndividual IRI="Batman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Possesion"/>
+        <NamedIndividual IRI="Conjurin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Language"/>
+        <NamedIndividual IRI="English"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Suspense_Thriller_Movie"/>
+        <NamedIndividual IRI="Fantastic_Four"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Awards"/>
+        <NamedIndividual IRI="Golden_Globe_Award"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Awards"/>
+        <NamedIndividual IRI="IIFA_Award"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Country"/>
+        <NamedIndividual IRI="India"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Awards"/>
+        <NamedIndividual IRI="Oscar_Award"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Country"/>
+        <NamedIndividual IRI="South_Africa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Language"/>
+        <NamedIndividual IRI="Spanish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Super_Hero_Movie"/>
+        <NamedIndividual IRI="Transformers"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Country"/>
+        <NamedIndividual IRI="United_Kingdom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Country"/>
+        <NamedIndividual IRI="United_States"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Rating"/>
+        <NamedIndividual IRI="Batman"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Rating"/>
+        <NamedIndividual IRI="Conjurin"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Rating"/>
+        <NamedIndividual IRI="Fantastic_Four"/>
+        <Literal datatypeIRI="&xsd;integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="Rating"/>
+        <NamedIndividual IRI="Transformers"/>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFemaleActor"/>
+        <ObjectProperty IRI="hasActor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMaleActor"/>
+        <ObjectProperty IRI="hasActor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isFemaleActorIn"/>
+        <ObjectProperty IRI="isActorIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isMaleActorIn"/>
+        <ObjectProperty IRI="isActorIn"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasActor"/>
+        <ObjectProperty IRI="isActorIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasDirector"/>
+        <ObjectProperty IRI="isDirectorIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isFemaleActorIn"/>
+        <ObjectProperty IRI="hasFemaleActor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isMaleActorIn"/>
+        <ObjectProperty IRI="hasMaleActor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isMusicalArtistIn"/>
+        <ObjectProperty IRI="hasMusicalArtist"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasProducer"/>
+        <ObjectProperty IRI="isProducerBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isAwardOf"/>
+        <ObjectProperty IRI="hasWonAward"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isWriterIn"/>
+        <ObjectProperty IRI="hasWriter"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="produces"/>
+        <ObjectProperty IRI="isProducedBy"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="hasPerformanceReview"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="belongsToGenre"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasActor"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDirector"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFemaleActor"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMaleActor"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMusicalArtist"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPerformanceReview"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasProducer"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasWonAward"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasWriter"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isActorIn"/>
+        <Class IRI="Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isAwardOf"/>
+        <Class IRI="Awards"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isDirectorIn"/>
+        <Class IRI="Director"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isFemaleActorIn"/>
+        <Class IRI="Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isMaleActorIn"/>
+        <Class IRI="Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isMusicalArtistIn"/>
+        <Class IRI="Musical_Artist"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isProducedBy"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isProducerBy"/>
+        <Class IRI="Producer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRecordedIn"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isWriterIn"/>
+        <Class IRI="Writer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="produces"/>
+        <Class IRI="Production_Company"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="releasedIn"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="belongsToGenre"/>
+        <Class IRI="Genre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasActor"/>
+        <Class IRI="Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDirector"/>
+        <Class IRI="Director"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFemaleActor"/>
+        <Class IRI="Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMaleActor"/>
+        <Class IRI="Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMusicalArtist"/>
+        <Class IRI="Musical_Artist"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPerformanceReview"/>
+        <Class IRI="PerformanceReview"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasProducer"/>
+        <Class IRI="Producer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasWonAward"/>
+        <Class IRI="Awards"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasWriter"/>
+        <Class IRI="Writer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isActorIn"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isAwardOf"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isDirectorIn"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isFemaleActorIn"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isMaleActorIn"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isMusicalArtistIn"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isProducedBy"/>
+        <Class IRI="Production_Company"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isProducerBy"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRecordedIn"/>
+        <Class IRI="Language"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isWriterIn"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="produces"/>
+        <Class IRI="Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="releasedIn"/>
+        <Class IRI="Country"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="hasFemaleActor"/>
+        <ObjectProperty IRI="hasMaleActor"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isFemaleActorIn"/>
+        <ObjectProperty IRI="isMaleActorIn"/>
+    </DisjointObjectProperties>
+    <FunctionalDataProperty>
+        <DataProperty IRI="MovieTitle"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="First_Name"/>
+        <Class IRI="Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Last_Name"/>
+        <Class IRI="Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="MovieTitle"/>
+        <Class IRI="Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="Rating"/>
+        <Class IRI="Movie"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="First_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Last_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="MovieTitle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="Rating"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Awards</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class describes awards related to movies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Country</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class informs regarding countries in which movie is released</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Genre</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This class describes various genre of movies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Golden_Globe_Award</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Golden Globe Award is an American accolade recognizing excellence in film and television, both domestic and foreign.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Oscar_Award</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Academy Awards or The Oscars is an annual American awards ceremony honoring cinematic achievements in the film industry.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
